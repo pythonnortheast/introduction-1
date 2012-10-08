@@ -29,12 +29,11 @@ message[-11] # Negative index values return items from the end of the string
 # Strings are *immutable*. They cannot be changed *in place*.
 message[0] = 'E'
 
-# But strings can be copied to create new strings
-real_message = " We've got pizza!" # Another string
-real_message * 5 # String can be copied multiple times using the "*"
+real_message = " We've got pizza!"
 
-# Strings are concatenated using the "+" operator
-full_message = message + real_message + " And, we've got drinks!"
+# Strings can be copied to create new strings
+full_message = message + real_message + " And, we've got drinks!" # Concatenated using the "+" operator
+real_message * 5 # Copied multiple times using the "*"
 
 print full_message
 
@@ -78,7 +77,7 @@ message.upper() # Call the "upper" method of a string
 message.title() # Call the "title" method of a string
 message.capitalize()# Call the "capitalize" method of a string
 
-message.count('e') # Count the number or times 'e' occurs in the string
+message.count('e') # Count the number of times 'e' occurs in the string
 
 message.index('e') # Return the position of the first occurrance of 'e'
 
