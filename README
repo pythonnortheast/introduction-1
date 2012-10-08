@@ -4,7 +4,3 @@ Use the https://github.com/inglesp/prescons file to run these example
 
 Usage:
 $ python prescons.py <filename>
-
-Each example Python file (<step>-<topic>.py) is accompanied by its own script
-file (<step>-<topic>.txt)
-
