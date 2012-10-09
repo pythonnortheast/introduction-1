@@ -3,13 +3,13 @@
 
 # A dict ('dictionary') is a list of keys with associated values
 my_dict = {
-    'a' : 'aardvark',
-    'key' : 'value'
+    'a': 'aardvark',
+    'key': 'value'
 }
 
 # (it's basically a list of pairs, the key and value separated
 # by a colon ':' and each pair separated by a comma ','
-online_dict = {'a' : 'aardvark', 'b' : 'baal'}
+online_dict = {'a': 'aardvark', 'b': 'baal'}
 
 # (It should look VERY familiar to users of Javascript)
 
@@ -26,26 +26,26 @@ my_dict[510] = 'AA55'
 print my_dict[510]
 
 my_dict[(1, 2)] = 'a value'
-print my_dict[(1, 2)] 
+print my_dict[(1, 2)]
 
 # Values can be _anything_ at all in the language
 
 # Other containers are fine too, including other dicts
 multi_dict = {
-    'list' : [1, 2, 3, 4],
-    'dict' : {'key' : 'value'}
+    'list': [1, 2, 3, 4],
+    'dict': {'key': 'value'}
 }
 
 # This means you can create nested structures:
 
 nested_dict = {
-    'result' : {
-        'error_code' : 0,
-         'text' : 'This is an example',
-         'data' : {
-            'news-items' : [1, 2, 3],  
-            'titles' : ['test', 'titles'],
-         }
+    'result': {
+        'error_code': 0,
+        'text': 'This is an example',
+        'data': {
+            'news-items': [1, 2, 3],
+            'titles': ['test', 'titles'],
+        }
     }
 }
 
@@ -58,13 +58,14 @@ print nested_dict['result']['data']['news-items'][1]
 # Create an empty dict
 func_dict = {}
 
+
 # Create a function that says 'hello'
 def say_hello():
     print 'hello!'
 
 # Assign the function to a key in the dict
 func_dict['my_function'] = say_hello
-func_dict['my_function']() 
+func_dict['my_function']()
 
 # We test to see if a key is set with 'in':
 
@@ -109,4 +110,3 @@ for key in my_dict:
 # Dicts are used by Python itself to store values on classes, functions and
 # modules. You can do some scary stuff playing with these, but that is
 # beyond the scope of today
-
