@@ -1,10 +1,17 @@
+# The list datatype is one of the most used datatypes in Python
+# Its also one of the easiest to understand
+# It simply represensts a collection of items
+# That can be added to or removed from.
+# Items are refereced by their position in the list,
+# called their Index.
+
 [5, 6, 3, 8, 99, 105]  # A list is a sequence of items
 
 x = [5, 6, 3, 8, 99, 105]  # Assigns a list to a variable
 
 print x
 
-print x[0]  # Gets a single item from list at [index] 0 is first element
+print x[0]  # Gets a single item from list at index 0 ie. first element
 
 print x[5]  # Gets items at index 5
 
