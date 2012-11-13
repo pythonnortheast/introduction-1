@@ -15,7 +15,7 @@ print dir()
 
 # The majority of things need to be 'imported'
 
-# 'os' is one of the standard modules available (Python 2.6+) 
+# 'os' is one of the standard modules available 
 import os
 
 # Now, we have an object in our local namespace called 'os'
@@ -32,6 +32,7 @@ print os.getcwd()
 from os import getcwd
 # This is now local!!!
 getcwd()
+print dir()
 
 # You can import EVERYTHING from a module like this:
 from os import *
@@ -42,10 +43,13 @@ print dir()
 # This makes me a SAD panda
 # ...honestly, don't do this unless you have a good reason.
 
-# More examples:
+# Another example: 
 from datetime import date
 
 print date.today()
+
+# Python has a great standard library, it's 'batteries included'.
+# See http://docs.python.org/library/
 
 # Packages are groupings of modules. Sub-modules are separated with a '.' 
 
@@ -62,7 +66,15 @@ print saxutils.escape('<h1>More nasty HTML</h1>')
 from xml.sax.saxutils import escape
 print escape('<p>You get the idea...</p>')
 
-# Modules are actually just files or folders
+# I've not discussed how to make modules or where Python looks for them - both
+# topics are quite simple  In short, modules are just .py files or folders 
+# with a special file '__init__.py' in the route of the folder
+# As for where Python looks for modules:
+
+import sys
+print sys.path
+# And we can even edit it if we want to
+sys.path.append('/a/new/place/for/modules')
 
 # Now to wrap up and hammer home that point about from <blah> import *
 import webbrowser
